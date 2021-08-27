@@ -1,9 +1,9 @@
-`timescale 1ns / 1ps
+timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Cal Poly CPE 133
 // Engineer: Jacqueline Radding and Carter O'Neill
 // 
-// Create Date: 08/21/2021 07:57:02 PM
+// Create Date: 08/18/2021 07:57:02 PM
 // Design Name: 
 // Module Name: YSNP_TOPLEVEL
 // Project Name: 
@@ -18,8 +18,6 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
 module YSNP_TOPLEVEL(
 input CLK, //clock
     input [2:0]D, // switches
@@ -30,7 +28,7 @@ input CLK, //clock
     output [2:0]LEDS // LED output to indicate what state of password entering sequence
     
     );
-    logic t1, t2, s_clk;
+    logic t1, t2, s_clk, out;
     logic [2:0] p1, p2, p3;//password created register memory outputs
     logic [2:0]s1,s2,s3; //password entered register memory outputs
     
@@ -48,7 +46,6 @@ input CLK, //clock
     comparison_checker pass_comparison(.en_pass1(p1),.set_pass1(s1), .en_pass2(p2),.set_pass2(s2),.en_pass3(p3),.set_pass3(s3), .out(t2)); // compares all equal state created and entered pass
     
     DEC display2 (.CLK(CLK), .Z(t2), .SEGMENTS(seg), .DISP_EN(an)); // Displays OPEN if all passwords sequences match and NOPE when they do not
-    
-    
-    
-      endmodule
+endmodule
+
+
