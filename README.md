@@ -1,5 +1,5 @@
 # YouShallNotPass
-A Basys 3 digital lock box
+A Basys 3 digital lock box created by Jacqueline R and Carter O
 
 About the Project
 	You Shall Not Pass is a digital lockbox that accepts inputs ranging from 0-7 from three switches that represent the three bits necessary for inputting the numbers 0-7. It accepts three such 3-bit inputs and saves them as a password. When these three inputs are correct and in the right sequence, the Basys 3 board’s seven segment display says “Open.” The seven segment will say “Nope” when the three bit passwords are entered incorrectly.	
