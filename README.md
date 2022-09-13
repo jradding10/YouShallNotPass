@@ -7,7 +7,7 @@ A Basys 3 digital lock box created by Jacqueline R and Carter O
 	In a practical application, the “create” switch would be hidden on the inside of the lockbox so that the password can only be changed by a user who knows the current set password.
 
 ## Structural Diagram
-There are two modes: create password mode and check password mode. A set of registers stores the created password bits which are then fed into the password comparison checker. Once the password checking mode is enabled, a seperate set of registers store the entered password bits and checks the thorugh the comparison checker once the enable button is pressed. The display says "OPEN" if the password mathces, and "NOPE" if they don't. 
+There are two modes: create password mode and check password mode. A set of registers stores the created password bits which are then fed into the password comparison checker. Once the password checking mode is enabled, a seperate set of registers store the entered password bits and checks the thorugh the comparison checker once the enable button is pressed. The display says "OPEN" if the password mathces, and "NOPE" if it doesn't. 
 
 The finite state machine (FSM) displays the light feature that checks all of the password bits to the clock cycle. The FSM has an aesthetic funciton.
 ![alt text](https://github.com/jradding10/YouShallNotPass/blob/main/diagrams/structural_ysnp.JPG)
