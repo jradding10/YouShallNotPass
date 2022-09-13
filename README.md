@@ -8,6 +8,6 @@ A Basys 3 digital lock box created by Jacqueline R and Carter O
 
 ## Structural Diagram
 
-![alt text](https://github.com/jradding10/YouShallNotPass/blob/main/diagrams/ysnp_struct_d.JPG)
+![alt text](https://github.com/jradding10/YouShallNotPass/blob/main/diagrams/structural_ysnp.JPG)
 
 Please refer to the final project report for the schematic.
